@@ -1,0 +1,631 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/index.js" type="module"></script>
+    <title>daVinciTechnologies,Inc.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/loader.scss" />
+  </head>
+  <body class="home">
+    <div id="loader" class="loader">
+      <div class="loader-inner">
+        <div class="loader-rect">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <span class="loader-percent">0%</span>
+      </div>
+    </div>
+    <div id="global-container">
+      <div id="asides">
+        <header class="header">
+          <div class="header__inner">
+            <a href="">
+              <span class="header__logo-wrap logo" data-scroll-trigger="logo">
+                <img
+                  src="/img/logo.png"
+                  class="header__logo logo__icon"
+                  alt=""
+                />
+                <img
+                  src="/img/textLogo.png"
+                  class="header__text logo__text"
+                  alt=""
+                />
+              </span>
+            </a>
+          </div>
+        </header>
+        <aside class="side">
+          <div class="side__inner">
+            <button class="btn-menu" data-mouse="stuck">
+              <span class="btn-menu__inner">
+                <span class="btn-menu__wrap">
+                  <span class="btn-menu__bar"></span>
+                </span>
+                <span class="btn-menu__wrap">
+                  <span class="btn-menu__bar"></span>
+                </span>
+                <span class="btn-menu__wrap">
+                  <span class="btn-menu__bar"></span>
+                </span>
+              </span>
+            </button>
+            <div class="side__sns">
+              <span class="side__follow">FOLLOW US</span>
+              <div class="side__links">
+                <a
+                  href="#"
+                  class="side__link"
+                  target="_black"
+                  data-mouse="stuck"
+                  data-mouse-scale="2.2"
+                >
+                  <img src="/img/sns/twitter.svg" alt="" />
+                </a>
+                <a
+                  href="#"
+                  class="side__link"
+                  target="_black"
+                  data-mouse="stuck"
+                  data-mouse-scale="2.2"
+                >
+                  <img src="/img/sns/youtube.svg" alt="" />
+                </a>
+                <a
+                  href="#"
+                  class="side__link"
+                  target="_black"
+                  data-mouse="stuck"
+                  data-mouse-scale="2.2"
+                >
+                  <img src="/img/sns/instagram.svg" alt="" />
+                </a>
+                <a
+                  href="#"
+                  class="side__link"
+                  target="_black"
+                  data-mouse="stuck"
+                  data-mouse-scale="2.2"
+                >
+                  <img src="/img/sns/facebook.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="menu">
+          <div class="menu__inner">
+            <nav class="menu__nav">
+              <ul class="menu__ul">
+                <li
+                  class="menu__li"
+                  data-mouse="highlight"
+                  data-mouse-scale="4"
+                >
+                  <a href="/">HOME</a>
+                </li>
+                <li
+                  class="menu__li"
+                  data-mouse="highlight"
+                  data-mouse-scale="4"
+                >
+                  <a href="/">CONCEPT</a>
+                </li>
+                <li
+                  class="menu__li"
+                  data-mouse="highlight"
+                  data-mouse-scale="4"
+                >
+                  <a href="/diverse.html">COMPANY</a>
+                </li>
+                <li
+                  class="menu__li"
+                  data-mouse="highlight"
+                  data-mouse-scale="4"
+                >
+                  <a href="/">PROJECT</a>
+                </li>
+                <li
+                  class="menu__li"
+                  data-mouse="highlight"
+                  data-mouse-scale="4"
+                >
+                  <a href="/">PORTFOLIO</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div
+        class="fresnel"
+        data-webgl="fresnel-bg"
+        data-tex-1="/movie/fresnel_back.webm"
+        data-tex-2="/movie/fresnel_back.mov"
+      ></div>
+      <div class="load-pp" data-webgl="distortion-text"></div>
+      <!-- 
+        #page-container内にメインのコンテンツを配置 
+        id="page-container"にはdata-page="home"を必ず付与すること。
+        data-page="home"とした場合にはscripts/page/home.jsが実行される。
+      -->
+      <div id="page-container" data-page="home">
+        <main>
+          <!-- ファーストビュー -->
+          <section class="fv">
+            <div
+              class="fv__content"
+              data-mouse="highlight"
+              data-mouse-scale="3"
+            >
+              <!-- スマホ用 テキスト -->
+              <div class="fv__text-letter">
+                <p class="fv__sub-title">Expressing daVinci's philosophy</p>
+                <h1
+                  class="fv__title"
+                  data-mouse="highlight"
+                  data-mouse-scale="4"
+                >
+                  <span class="fv__title-text">daVinci<br />Technologies</span>
+                </h1>
+                <p class="fv__desc">
+                  daVinciの哲学をtechnologyで社会実装する。
+                </p>
+              </div>
+              <!-- スマホ用 テキスト -->
+              <div
+                class="fv__text-shader"
+                data-webgl="slider-wave"
+                data-tex-1="/img/headline/tpo1.png"
+                data-tex-2="/img/headline/tex1.png"
+                data-tex-3="/img/headline/tex2.png"
+                data-tex-4="/img/headline/tex3.png"
+                data-tex-5="/img/headline/tex4.png"
+              ></div>
+            </div>
+            <div class="fv__main">
+              <div class="fv__holder">
+                <div
+                  class="fv__slider slider"
+                  data-webgl="slider-world"
+                  data-tex-1="/img/slider/dd.jpg"
+                  data-tex-2="/img/slider/d1.jpg"
+                  data-tex-3="/img/slider/d2.jpg"
+                  data-tex-4="/img/slider/d3.jpg"
+                  data-tex-5="/img/slider/d4.jpg"
+                ></div>
+              </div>
+            </div>
+            <div class="fv__nav">
+              <button class="fv__btn prev" data-mouse="stuck">
+                <svg
+                  width="120"
+                  height="120"
+                  viewBox="0 0 120 120"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="60" cy="60" r="59.5" stroke="white" />
+                  <path
+                    d="M85 61L47.5 82.6506L47.5 39.3494L85 61Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <button class="fv__btn next" data-mouse="stuck">
+                <svg
+                  width="120"
+                  height="120"
+                  viewBox="0 0 120 120"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="60" cy="60" r="59.5" stroke="white" />
+                  <path
+                    d="M85 61L47.5 82.6506L47.5 39.3494L85 61Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </section>
+          <!-- ファーストビュー -->
+          <hr class="section-hr" />
+          <!-- VISIONセクション -->
+          <section class="vision" data-scroll-trigger="ripple">
+            <h2 class="vision__title sm">
+              <span
+                class="vision__title-text"
+                data-webgl="distortion-text"
+                data-tex-1="/img/headline/concept1.jpg"
+                data-scroll-trigger="progress"
+                >CONCEPT</span
+              >
+            </h2>
+            <div class="vision__inner">
+              <div class="vision__left">
+                <div
+                  class="vision__raymarching"
+                  data-webgl="ray-marching"
+                  data-tex-1="/img/metal_matcap128x128.jpg"
+                  data-scroll-trigger="progress"
+                ></div>
+                <div
+                  class="vision__fallback"
+                  data-webgl="scroll-split"
+                  data-tex-1="/img/slider/t1.jpg"
+                  data-tex-2="/img/slider/t2.jpg"
+                  data-scroll-trigger="progress"
+                ></div>
+              </div>
+              <div class="vision__right">
+                <div class="vision__right-inner">
+                  <h2 class="vision__title pc">
+                    <span
+                      class="vision__title-text"
+                      data-webgl="distortion-text"
+                      data-tex-1="/img/headline/concept1.jpg"
+                      data-scroll-trigger="progress"
+                      data-mouse="highlight"
+                      data-mouse-scale="3"
+                      >CONCEPT</span
+                    >
+                  </h2>
+                  <div class="vision__texts">
+                    <p class="vision__p" data-scroll-trigger="fade">
+                      もし、ダヴィンチが生きていたら、、
+                    </p>
+                    <p class="vision__p" data-scroll-trigger="fade">
+                      偉大な知恵をテクノロジーで社会実装する。
+                    </p>
+                  </div>
+                  <div class="vision__more" data-scroll-trigger="fade">
+                    <a href="/" class="more-link">
+                      <span class="more-link__text">MORE</span>
+                      <span class="more-link__circle" data-mouse="stuck"></span>
+                      <span class="more-link__arrow">
+                        <span class="more-link__arrow-body">
+                          <img src="/img/arrow.svg" alt="" />
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- VISIONセクション -->
+          <hr class="section-hr" />
+          <!-- DIVERSEセクション -->
+          <section class="diverse">
+            <div class="diverse__inner">
+              <div class="diverse__left">
+                <div class="diverse__left-inner">
+                  <h2 class="diverse__title">
+                    <span
+                      class="diverse__title-text"
+                      data-webgl="distortion-text"
+                      data-tex-1="/img/headline/company1.jpg"
+                      data-mouse="highlight"
+                      data-mouse-scale="3"
+                      data-scroll-trigger="progress"
+                      >COMPANY</span
+                    >
+                  </h2>
+                  <p class="diverse__desc" data-scroll-trigger="fade">
+                    株式会社daVinciTechnologies設立<br class="sm-hidden" />
+                  </p>
+                  <div class="diverse__more" data-scroll-trigger="fade">
+                    <a href="/diverse.html" class="more-link">
+                      <span class="more-link__text">MORE</span>
+                      <span class="more-link__circle" data-mouse="stuck"></span>
+                      <span class="more-link__arrow">
+                        <span class="more-link__arrow-body">
+                          <img src="*" alt="" />
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="diverse__right">
+                <div class="diverse__holder">
+                  <div
+                    class="diverse__img"
+                    data-webgl="particles"
+                    data-tex-1="/img/inc.jpeg"
+                    data-tex-2="/img/inc2.jpeg"
+                    data-scroll-trigger="progressParticles"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- DIVERSEセクション -->
+          <hr class="section-hr" />
+          <!-- SKILLセクション -->
+          <section class="skill" data-scroll-trigger="reversal">
+            <div class="skill__inner">
+              <div class="skill__header" data-scroll-trigger="fade">
+                <h2 class="skill__title">
+                  <span
+                    class="skill__title-text"
+                    data-webgl="distortion-text"
+                    data-tex-1="/img/headline/project1.jpg"
+                    data-scroll-trigger="progress"
+                    data-mouse="highlight"
+                    data-mouse-scale="3"
+                    >PROJECT</span
+                  >
+                </h2>
+                <p class="skill__desc">
+                  開発プロジェクト<br
+                    class="sm-hidden"
+                  />JavaScript/TypeScript/Three.js/WebGL/React/Next.js等
+                </p>
+              </div>
+              <div class="skill__holder">
+                <div
+                  class="skill__slider slider"
+                  data-webgl="slider-reflect"
+                  data-tex-1="/img/slider/dd.jpg"
+                  data-tex-2="/img/slider/d1.jpg"
+                  data-tex-3="/img/slider/d2.jpg"
+                  data-tex-4="/img/slider/d3.jpg"
+                  data-tex-5="/img/slider/d4.jpg"
+                ></div>
+              </div>
+              <div class="skill__content">
+                <ul class="skill__ul">
+                  <li class="skill__li">
+                    <h3 class="skill__headline">CRM/MA</h3>
+                    <p class="skill__text">
+                      データドリブンなシステム運用をサポート。顧客管理システム、ライセンス管理システム、ユーザーデータの活用等
+                    </p>
+                  </li>
+                  <li class="skill__li">
+                    <h3 class="skill__headline">RPA</h3>
+                    <p class="skill__text">SNS運用管理をRPAツールでサポート</p>
+                  </li>
+                  <li class="skill__li">
+                    <h3 class="skill__headline">AI</h3>
+                    <p class="skill__text">
+                      Azure環境構築、AIchatbot、ChatGPT連携システムの開発等
+                    </p>
+                  </li>
+                  <li class="skill__li">
+                    <h3 class="skill__headline">EC</h3>
+                    <p class="skill__text">
+                      Amazon、shopifyの運営。物販ツールの開発等
+                    </p>
+                  </li>
+                  <li class="skill__li">
+                    <h3 class="skill__headline">WEB</h3>
+                    <p class="skill__text">
+                      3D技術を用いた差別化サイトの制作、ストーリー型LPの制作、shopifyECサイト制作等
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- SKILLセクション -->
+          <hr class="section-hr" />
+          <!-- GRAPHICセクション -->
+          <section class="graphic">
+            <div class="graphic__inner">
+              <h2 class="graphic__title" data-scroll-trigger="fade">
+                <span
+                  class="graphic__title-text"
+                  data-mouse="highlight"
+                  data-mouse-scale="3"
+                  data-webgl="distortion-text"
+                  data-tex-1="/img/headline/portfolio1.jpg"
+                  data-scroll-trigger="progress"
+                  >PORTFOLIO</span
+                >
+              </h2>
+              <p class="graphic__subtitle" data-scroll-trigger="fade">
+                作品の一例
+              </p>
+              <div class="panel">
+                <div class="panel__item">
+                  <a class="panel__link" href="">
+                    <span class="panel__holder">
+                      <span
+                        class="panel__media"
+                        data-webgl="plane-sphere"
+                        data-tex-1="/img/inc2.jpeg"
+                        data-mouse="highlight"
+                        data-scroll-trigger="progress"
+                      ></span>
+                    </span>
+                    <span class="panel__content" data-scroll-trigger="fade">
+                      <span class="panel__meta">
+                        <span class="panel__date">2022.12.14</span>
+                        <span class="panel__cat">ATTRIBUTE</span>
+                      </span>
+                      <span class="panel__title">Vertex Shader</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel__item">
+                  <a class="panel__link" href="">
+                    <span class="panel__holder">
+                      <img
+                        class="panel__media"
+                        data-webgl="plane-sphere"
+                        data-tex-1="/img/inc2.jpeg"
+                        data-mouse="highlight"
+                        data-scroll-trigger="progress"
+                      />
+                    </span>
+                    <span class="panel__content" data-scroll-trigger="fade">
+                      <span class="panel__meta">
+                        <span class="panel__date">2022.12.14</span>
+                        <span class="panel__cat">UNIFORM</span>
+                      </span>
+                      <span class="panel__title">Fragment Shader</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel__item">
+                  <a class="panel__link" href="">
+                    <span class="panel__holder">
+                      <img
+                        class="panel__media"
+                        data-webgl="plane-sphere"
+                        data-tex-1="/img/inc2.jpeg"
+                        data-mouse="highlight"
+                        data-scroll-trigger="progress"
+                      />
+                    </span>
+                    <span class="panel__content" data-scroll-trigger="fade">
+                      <span class="panel__meta">
+                        <span class="panel__date">2022.12.14</span>
+                        <span class="panel__cat">VARYING</span>
+                      </span>
+                      <span class="panel__title">Post Processing</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel__item">
+                  <a class="panel__link" href="">
+                    <span class="panel__holder">
+                      <img
+                        class="panel__media"
+                        data-webgl="plane-sphere"
+                        data-tex-1="/img/inc2.jpeg"
+                        data-mouse="highlight"
+                        data-scroll-trigger="progress"
+                      />
+                    </span>
+                    <span class="panel__content" data-scroll-trigger="fade">
+                      <span class="panel__meta">
+                        <span class="panel__date">2022.12.14</span>
+                        <span class="panel__cat">RAY CASTING</span>
+                      </span>
+                      <span class="panel__title">Rasterization</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel__item">
+                  <a class="panel__link" href="">
+                    <span class="panel__holder">
+                      <img
+                        class="panel__media"
+                        data-webgl="plane-sphere"
+                        data-tex-1="/img/inc2.jpeg"
+                        data-mouse="highlight"
+                        data-scroll-trigger="progress"
+                      ></img>
+                    </span>
+                    <span class="panel__content" data-scroll-trigger="fade">
+                      <span class="panel__meta">
+                        <span class="panel__date">2022.12.14</span>
+                        <span class="panel__cat">PERLIN</span>
+                      </span>
+                      <span class="panel__title">Ray Marching</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="panel__item">
+                  <a class="panel__link" href="">
+                    <span class="panel__holder">
+                      <img
+                        class="panel__media"
+                        data-webgl="plane-sphere"
+                        data-tex-1="/img/inc2.jpeg"
+                        data-mouse="highlight"
+                        data-scroll-trigger="progress"
+                      />
+                    </span>
+                    <span class="panel__content" data-scroll-trigger="fade">
+                      <span class="panel__meta">
+                        <span class="panel__date">2022.12.14</span>
+                        <span class="panel__cat">NORMALIZATION</span>
+                      </span>
+                      <span class="panel__title">Rendering</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="graphic__more">
+                <a
+                  class="more-link"
+                  href="https://not-equal.dev"
+                  target="_blank"
+                >
+                  <span class="more-link__text">MORE</span>
+                  <span class="more-link__circle" data-mouse="stuck"> </span>
+                  <span class="more-link__arrow">
+                    <span class="more-link__arrow-body">
+                      <img src="/img/arrow.svg" alt="" />
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <!-- GRAPHICセクション -->
+          <hr class="section-hr" />
+        </main>
+        <footer class="footer">
+          <div class="footer__inner">
+            <a
+              href="https://not-equal.dev"
+              class="footer__logo-link"
+              target="_blank"
+              data-mouse="highlight"
+              data-mouse-scale="2"
+            >
+              <span class="footer__logo logo">
+                <img class="logo__icon" src="/img/logo.png" alt="" />
+                <img class="logo__text" src="/img/textLogo.png" alt="" />
+              </span>
+            </a>
+            <nav class="footer__nav">
+              <ul class="footer__ul">
+                <li class="footer__li">
+                  <a href="/">HOME</a>
+                </li>
+                <li class="footer__li">
+                  <a href="">CONCEPT</a>
+                </li>
+                <li class="footer__li">
+                  <a href="/diverse.html">COMPANY</a>
+                </li>
+                <li class="footer__li">
+                  <a href="">PROJECT</a>
+                </li>
+                <li class="footer__li">
+                  <a href="">PORTFOLIO</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__copyright">
+              <p>
+                <span data-mouse="highlight"
+                  ><a href="*">© 2021 daVinci Technologies,Inc.</a></span
+                >
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <canvas id="canvas"></canvas>
+    </div>
+  </body>
+</html>
